@@ -4,9 +4,24 @@
     <title>HexoClock</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
-    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
 
-    <script type="text/javascript">
+  	<a href="#" id="hide" onclick="return false">strange link...</a>
+
+  <div id="main">
+  	<h1 id="clock"> 00:00:00</h1>
+  	<p id="color">#000000</p>
+  	<script src = "scripts/script.js"></script>
+  </div>
+  <p id="hope">but something remains</p>
+
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    
+<script type="text/javascript">
     	function showAll(){
     		$("#main").slideUp(5000,function()
     		{
@@ -20,21 +35,6 @@
  	{
  		$("#hide").bind ("click", showAll);
  	});
-
-    </script>
-
-  </head>
-  <body>
-
-  	<a href="#" id="hide" onclick="return false">strange link...</a>
-
-  <div id="main">
-  	<h1 id="clock"> 00:00:00</h1>
-  	<p id="color">#000000</p>
-  	<script src = "scripts/script.js"></script>
-  </div>
-  <p id="hope">but something remains</p>
-
-
+    </script>		
   </body>
 </html>
